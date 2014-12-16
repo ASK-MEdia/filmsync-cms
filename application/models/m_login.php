@@ -25,10 +25,7 @@ Class M_Login extends CI_Model
         $this->db->where(array('username'=>$username,'status '=>1));
         $result1 = $this->db->get($this->table);
         return $result1->result();
-         /*$result1=$result->row();
-        echo $this->db->last_query();
-        stop($result1);
-        return $result->row();*/
+
     }
     
     function validate_accesstoken($accesstoken,$userid)
@@ -84,10 +81,6 @@ Class M_Login extends CI_Model
     
     function generate_appsecretkey($app_data)
     {
-        //echo '<pre>';
-        //print_r($app_data);
-        //echo '</pre>';
-        
          $this->db->insert('apiauth', $app_data);
         return $this->db->insert_id(); 
     }

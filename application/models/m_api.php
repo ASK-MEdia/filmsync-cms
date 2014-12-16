@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-/* Author: Anish Revindran
- * Description: Admin model class
+/* Author: Nidhin N
+ * Description: Api model class
  */
 class M_Api extends CI_Model{
 		

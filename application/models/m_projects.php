@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-/* Author: Anish Revindran
- * Description: Admin model class
+/* Author: Nidhin N
+ * Description: Projects model class
  */
 class M_Projects extends CI_Model{
 	
@@ -276,10 +276,8 @@ class M_Projects extends CI_Model{
 		$cuetime = $time;
 		$fname=$cuetime;
 
-		//echo $filename;exit;
 		header("Content-Type: application/force-download");
 		header('Content-Description: File Transfer');
-		//header('Content-Disposition: attachment; filename="soundfile.wav"');
 		header('Content-Disposition: attachment; filename="'.$projectname.'_'.$fname.'_'.$cardname.'.wav"');
 		header('Expires: 0');
 		header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
@@ -292,7 +290,6 @@ class M_Projects extends CI_Model{
 
         public function downloadcards($projectid,$projecttitle)
         {          
- //  error_reporting(0);
             $this->db->select('id');
             $this->db->select('time');
             $this->db->select('cardtitle');
@@ -309,12 +306,10 @@ class M_Projects extends CI_Model{
 
             /*     new changes      */
 
-
                 mkdir(BASE_PATH.'zip/'.$projectid);
                 mkdir(BASE_PATH.'zip/'.$projectid.'/'.$projecttitle);
                 foreach($result1 as $res)
                 {  
-                  //  $files[].= BASE_PATH.'soundfiles/output/'.$res->id.'.wav';
                     if(file_exists(BASE_PATH.'soundfiles/output/'.$res->id.'.wav'))
                     {
 
@@ -327,8 +322,6 @@ class M_Projects extends CI_Model{
                 }
                 
                 $allfiles = scandir(BASE_PATH.'zip/'.$projectid.'/'.$projecttitle);
-              //  print_r($allfiles);
-               // exit;
              /*     new changes      */
 
             $files=array();
@@ -338,7 +331,6 @@ class M_Projects extends CI_Model{
                 $files[].= BASE_PATH.'zip/'.$projectid.'/'.$projecttitle.'/'.$result;
             }
 
-        //  exit;
             $valid_files = array();
             foreach($files as $file) 
             {
@@ -372,7 +364,6 @@ class M_Projects extends CI_Model{
                         $localname=$local[$array_index-1];
                         $zip->addFile($file,$localname);
                     }
-//echo BASE_PATH.'zip/'.$projectid.'/'.$projecttitle;exit;
                     $zip->close();
                     if(file_exists($zip_name))
                     {
@@ -388,7 +379,7 @@ class M_Projects extends CI_Model{
                         unlink($zip_name);
                     }
                     exec('rm -rf '.BASE_PATH.'zip/'.$projectid.'/'.$projecttitle);
-                   // rmdir(BASE_PATH.'zip/'.$projectid.'/'.$projecttitle);
+
 
                 } 
                 else 
