@@ -6,7 +6,7 @@ Class M_Login extends CI_Model
         parent::__construct();
         $this->table = 'user';
     }
-    
+     
     function save_userdetails($insert_data)
     {
         $this->db->insert($this->table, $insert_data);
@@ -85,6 +85,6 @@ Class M_Login extends CI_Model
         return $this->db->insert_id(); 
     }
     
-    
+     
     
 }
