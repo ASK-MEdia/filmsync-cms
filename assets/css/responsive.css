@@ -1,0 +1,75 @@
+@media screen and (max-width:1360px) {
+.header_conten							{width:96%;}
+.banner_content							{width:100%;}
+.cc_top_text_holder						{width:100%; padding:0px 20px}
+.pricing_holder_top_text_holder			{width:100%;}
+.sync_content							{width:100%;}
+
+.cc_easytocreat_holder .text			{width:45%;}
+.cc_easytocreat_holder .pic				{width:50%;}
+.cc_easytocreat_holder .pic	img			{width:90%;}
+
+.cc_iosandroid_holder .pic				{width:50%}
+.cc_iosandroid_holder .pic img			{width:90%}
+.cc_iosandroid_holder .text				{width:45%;}
+}
+@media screen and (max-width:1024px) {
+.header_conten							{width:96%;}
+.banner_content							{width:100%;}
+.video_holder							{width:80%; display:block; margin:0px auto;}
+.text_holder							{width:80%; text-align:center; display:block; margin:20px auto 0px auto;}
+
+
+
+.sync_holder							{}
+.sync_content							{width:100%;}
+.sync_text_holder						{display:block; margin:0px auto 50px auto; text-align:center; width:auto;}
+.sync_text_holder_heading				{text-align:center;}
+.screen_holder							{display:block; margin:0px auto;}
+
+.cc_easytocreat_holder .pic				{display:none;}
+.cc_iosandroid_holder .pic				{display:none;}
+
+.cc_easytocreat_holder .text			{width:100%; text-align:center; padding:0px 10px 50px 10px; height:auto;}
+.cc_iosandroid_holder .text				{width:100%; text-align:center; padding:0px 10px 50px 10px; height:auto;}
+.cc_button								{float:none !important; font-size:25px;}
+.cc_easytocreat_holder .text h3			{text-align:center;}
+.cc_iosandroid_holder .text h3			{text-align:center;}
+
+/*.cc_top_text_holder					{width:100%; padding:0px 20px}
+.cc_easytocreat_holder .text			{width:45%;}
+.cc_easytocreat_holder .pic				{width:50%;}
+.cc_easytocreat_holder .pic	img			{width:90%;}
+*/
+
+.pricing_holder_top_text_holder			{width:100%; padding:0px 20px}
+.pricing_plans_holder_li				{margin-bottom: 140px; width:45%}
+.pricing_plans_holder 					{padding-bottom: 0px;}
+.plans_2_holder							{width:100%;}
+
+.details_li								{font-size:15px;}
+
+.footer_holder							{font-size:10px; color:#666565;}
+
+}
+@media screen and (max-width:768px) {
+body									{font-size:20px; line-height:30px !important;}
+.header_conten							{width:94%;}
+
+.cc_easytocreat_holder .pic				{display:none;}
+.cc_iosandroid_holder .pic				{display:none;}
+
+.cc_easytocreat_holder .text			{width:100%; text-align:center; padding:0px 10px 50px 10px; height:auto;}
+.cc_iosandroid_holder .text				{width:100%; text-align:center; padding:0px 10px 50px 10px; height:auto;}
+
+.cc_easytocreat_holder .text h3			{text-align:center;}
+.cc_iosandroid_holder .text h3			{text-align:center;}
+
+.cc_button								{float:none !important;}
+.text_holder .text						{line-height:30px;}
+.sync_text_holder .text					{line-height:30px;}
+.cc_top_text_holder .text				{line-height:30px;}
+
+.sync_text_holder_heading				{margin-bottom:30px;}
+.pricing_holder_top_text_holder h2		{margin: 0px 0px 20px 0px;}
+}

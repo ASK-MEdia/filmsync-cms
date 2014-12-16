@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Filimsync</title>
+<link href="<?php echo base_url(); ?>assets/css/filmsync_singelpage.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+
+<body>
+<?php  
+    $session=  $this->session->userdata('user_data');                   
+  ?>
+<!--Wrapper-->
+<div class="wrapper">
+	<!--header-->
+    <div class="header">
+    	<div class="header_conten">
+        	<div class="logo"><img src="<?php echo base_url(); ?>assets/img/logo.png"></div>       
+            <?php
+            if(isset($session['username']))
+            { ?>
+                <a href="<?php echo site_url('login') ?>"><div class="menu_nav"><?php echo $session['username']; ?></div></a>
+            <?php }else
+            {?>
+             <a href="<?php echo site_url('login') ?>"><div class="menu_nav">Sign In</div></a>
+             <a href="<?php echo site_url('login/registration') ?>"><div class="menu_nav">Register</div></a>
+           <?php }
+            ?>
+           
+
+            <a href="#"><div class="menu_nav">Documentation</div></a>
+            
+        	<div class="clear"></div>
+        </div>
+    </div>
+    <!--/header-->
+	<!--slider holder-->
+    <div class="banner_holder">
+    	<div class="banner_content">
+        	<div class="video_holder"><iframe src="//player.vimeo.com/video/93452136" width="100%" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div class="text_holder">
+            	<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur.Sed tristique dapibus lacus ac placerat.</div>
+                <span><img src="<?php echo base_url(); ?>assets/img/itune_store.png"></span>
+                <span><img src="<?php echo base_url(); ?>assets/img/android_store.png"></span>
+            </div>
+        </div>
+    </div>
+    <!--/ slider holder-->
+    <!--App sync holder-->
+    <div class="sync_holder">
+    	<div class="sync_content">
+        	<div class="sync_text_holder">
+            	<div class="sync_text_holder_heading">Filim Sync App.</div>
+            	<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur.</div>
+                <span><img src="<?php echo base_url(); ?>assets/img/itune_store.png"></span>
+                <span><img src="<?php echo base_url(); ?>assets/img/android_store.png"></span>
+            </div>
+            <div class="screen_holder"><img src="<?php echo base_url(); ?>assets/img/mobile_screen.png"></div>
+        </div>
+    </div>
+    <!--/ App sync holder-->
+    <!--creat content holder-->
+    <div class="cc_holder">
+    	<div class="cc_top_text_holder">
+        	<h2>Creating Content</h2>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur. Vivamus porttitor, dui in porta efficitur, odio ipsum fringilla turpis, vitae imperdiet dui augue eget urna. Fusce efficitur, turpis et sagittis congue, ex sapien sodales enim.</div>
+        </div>
+        
+        <div class="cc_easytocreat_holder">
+        	<div class="text">
+            	<h3>Easy to creat content</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur. Vivamus porttitor, dui in porta efficitur, odio ipsum fringilla turpis,
+                <div class="clear"></div>
+                <div class="cc_button" style="float:right;">Sign Up</div>
+                <div class="clear"></div>
+            </div>
+            <div class="pic"><img src="<?php echo base_url(); ?>assets/img/cc_01.png"></div>
+        </div>
+        
+        <div class="cc_iosandroid_holder">
+        	<div class="pic"><img src="<?php echo base_url(); ?>assets/img/cc_02.png"></div>
+            <div class="text">
+            	<h3>IOS and Android SDK </h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur. Vivamus porttitor, dui in porta efficitur, odio ipsum fringilla turpis,
+                <div class="clear"></div>
+                <div class="cc_button" style="float:left;">Update to Enterprise</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--/ creat content holder-->
+    <!--Pricing holder-->
+    <div class="pricing_holder">
+    	<div class="pricing_holder_top_text_holder">
+        	<h2>Pricing</h2>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur. Vivamus porttitor, dui in porta efficitur, odio ipsum fringilla turpis, vitae imperdiet dui augue eget urna. Fusce efficitur, turpis et sagittis congue, ex sapien sodales enim.</div>
+        </div>
+    </div>
+    <!--/ Pricing holder-->
+    <!--pricing plans holder-->
+    <div class="pricing_plans_holder">
+    		<div class="pricing_plans_holder_li">
+            	<div class="heading">Basic</div>
+                <div class="rate"><span class="small">$</span>195.50</div>
+                <div class="details">
+                	<div class="details_heading">Tristique dapibus </div>
+                	<div class="details_li">- Lorem ipsum dolor sit amet, </div>
+                    <div class="details_li">- consectetur adipiscing elit.  </div>
+                    <div class="details_li">- Sed tristique dapibus lacus ac  </div>
+                    <div class="details_li">- placerat. Aliquam lobortis </div>
+                    <div class="details_li">- uctor mauris ut consectetur.  </div>
+                    <div class="details_li">- Vivamus porttitor, dui in porta  </div>
+                    <div class="details_li">- efficitur, odio ipsum fringilla  </div>
+                    
+                    <div class="details_heading" style="margin-top:20px;">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.e</div>
+                </div>
+    		</div>
+            
+            <div class="pricing_plans_holder_li">
+            	<div class="heading">Basic</div>
+                <div class="rate"><span class="small">$</span>195.50</div>
+                <div class="details">
+                	<div class="details_heading">Tristique dapibus </div>
+                	<div class="details_li">- Lorem ipsum dolor sit amet, </div>
+                    <div class="details_li">- consectetur adipiscing elit.  </div>
+                    <div class="details_li">- Sed tristique dapibus lacus ac  </div>
+                    <div class="details_li">- placerat. Aliquam lobortis </div>
+                    <div class="details_li">- uctor mauris ut consectetur.  </div>
+                    <div class="details_li">- Vivamus porttitor, dui in porta  </div>
+                    <div class="details_li">- efficitur, odio ipsum fringilla  </div>
+                    
+                    <div class="details_heading" style="margin-top:20px;">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.e</div>
+                </div>
+    		</div>
+            
+            <div class="pricing_plans_holder_li">
+            	<div class="heading">Basic</div>
+                <div class="rate"><span class="small">$</span>195.50</div>
+                <div class="details">
+                	<div class="details_heading">Tristique dapibus </div>
+                	<div class="details_li">- Lorem ipsum dolor sit amet, </div>
+                    <div class="details_li">- consectetur adipiscing elit.  </div>
+                    <div class="details_li">- Sed tristique dapibus lacus ac  </div>
+                    <div class="details_li">- placerat. Aliquam lobortis </div>
+                    <div class="details_li">- uctor mauris ut consectetur.  </div>
+                    <div class="details_li">- Vivamus porttitor, dui in porta  </div>
+                    <div class="details_li">- efficitur, odio ipsum fringilla  </div>
+                    
+                    <div class="details_heading" style="margin-top:20px;">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.e</div>
+                </div>
+    		</div>
+            
+            <div class="pricing_plans_holder_li">
+            	<div class="heading">Basic</div>
+                <div class="rate"><span class="small">$</span>195.50</div>
+                <div class="details">
+                	<div class="details_heading">Tristique dapibus </div>
+                	<div class="details_li">- Lorem ipsum dolor sit amet, </div>
+                    <div class="details_li">- consectetur adipiscing elit.  </div>
+                    <div class="details_li">- Sed tristique dapibus lacus ac  </div>
+                    <div class="details_li">- placerat. Aliquam lobortis </div>
+                    <div class="details_li">- uctor mauris ut consectetur.  </div>
+                    <div class="details_li">- Vivamus porttitor, dui in porta  </div>
+                    <div class="details_li">- efficitur, odio ipsum fringilla  </div>
+                    
+                    <div class="details_heading" style="margin-top:20px;">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.e</div>
+                </div>
+    		</div>
+    </div>
+    <!--/ pricing plans holder-->
+	<!--footer-->
+    <div class="footer_holder">Documentation&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Support&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Signin&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Press Inquery	</div>
+    <!--/ footer-->
+</div>
+<!--/ Wrapper--> 
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "5.2.8",
+        "mailgun/mailgun-php": "~1.7.2"
+    }
+}
