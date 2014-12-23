@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Filmsync</title>
+<title>FilmSync</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
 <link href="<?php echo base_url(); ?>assets/css/filmsync_singelpage.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 <link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet" type="text/css">
 <script src="<?php echo base_url(); ?>assets/plugins/jquery-2.1.0.min.js"></script>
+
 </head>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
 .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
@@ -104,7 +105,8 @@
                 ?>
                
                 <a href="<?php echo site_url('dashboard') ?>"><div class="menu_nav">Filmsync Tool</div></a>
-                <a href="#"><div class="menu_nav">Documentation</div></a>
+                <a href="https://github.com/ASK-MEdia/FilmSyncSupport/"><div class="menu_nav">Documentation</div></a>
+		<a href="mailto:askmediaorg@gmail.com"><div class="menu_nav">Contact</div></a>
                 
     
 
@@ -159,8 +161,7 @@
         <div class="cc_easytocreat_holder">
         	<div class="text">
             	<h3>Easy to create content</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique dapibus lacus ac placerat. Aliquam lobortis auctor mauris ut consectetur. Vivamus porttitor, dui in porta efficitur, odio ipsum fringilla turpis,
-                <div class="clear"></div>
+                The simple web-based interface makes creating content for second screen experiences easy for any producer or filmmaker. <div class="clear"></div>
                 <?php
                 if(!isset($session['username']))
                 { ?>
@@ -256,7 +257,7 @@
             
             <div class="pricing_plans_holder_li">
             	<div class="heading">Enterprise License</div>
-                <div class="rate"><span class="small">$</span>--</div>
+                <div class="rate"><span class="small"></span>Contact</div>
                 <div class="details">
                 	<div class="details_heading">Contact us to discuss licensing FilmSync for your personal app.
 </div>
@@ -268,7 +269,7 @@
                     
                     
                     
-                    <div class="details_heading" style="margin-top:20px;"><button type="button" class="btn btn-primary btn-lg btn-block">Contact</button></div>
+                    <div class="details_heading" style="margin-top:20px;"><a href="mailto:askmediaorg@gmail.com"><button type="button" class="btn btn-primary btn-lg btn-block">Contact</button></a></div>
                 </div>
     		</div>
             </div>
@@ -277,7 +278,9 @@
     </div>
     <!--/ pricing plans holder-->
 	<!--footer-->
-    <div class="footer_holder">Documentation&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Support&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Press Inquery	</div>
+    <div class="footer_holder"><a href="<?php echo site_url('dashboard') ?>">Filmsync Admin Tool</a> | 
+                <a href="https://github.com/ASK-MEdia/FilmSyncSupport/">Documentation</a> | 
+		<a href="mailto:askmediaorg@gmail.com">Licensing or Press Contact</a> | by <a href="http://ask-media.org">ASK Media</a>
     <!--/ footer-->
 </div>
 <!--/ Wrapper--> 
