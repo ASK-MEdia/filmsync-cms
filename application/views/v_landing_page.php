@@ -125,8 +125,8 @@
             	<div class="text">
                 An interactive second screen experience for film, video, news and presentations. <br>Download the FilmSync App to experience contextual content on your phone or tablet. 
                 </div>
-                <span><img src="<?php echo base_url(); ?>assets/img/itune_store.png"></span>
-                <span><img src="<?php echo base_url(); ?>assets/img/android_store.png"></span>
+                <span><a href="https://itunes.apple.com/ro/app/filmsync/id952707011?mt=8"><img src="<?php echo base_url(); ?>assets/img/itune_store.png"></a></span>
+                <span><a href="https://play.google.com/store/apps/details?id=com.filmsync&hl=en"><img src="<?php echo base_url(); ?>assets/img/android_store.png"></a></span>
             </div>
         </div>
     </div>
@@ -142,8 +142,9 @@
                     Viewers can engage with the content in many ways, including: interactive maps and timelines, enhanced graphics, data visualizations, satellite imagery, trivia and even interact with other audience members viewing the film.
     
                 </div>
-                <span><img src="<?php echo base_url(); ?>assets/img/itune_store.png"></span>
-                <span><img src="<?php echo base_url(); ?>assets/img/android_store.png"></span>
+                <span><a href="https://itunes.apple.com/ro/app/filmsync/id952707011?mt=8"><img src="<?php echo base_url(); ?>assets/img/itune_store.png"></a></span>
+                <span><a href="https://play.google.com/store/apps/details?id=com.filmsync&hl=en"><img src="<?php echo base_url(); ?>assets/img/android_store.png"></a></span>
+           
             </div>
             <div class="screen_holder"><img src="<?php echo base_url(); ?>assets/img/mobile_screen.png"></div>
         </div>
@@ -165,7 +166,7 @@
                 <?php
                 if(!isset($session['username']))
                 { ?>
-                <a href="<?php echo site_url('login');  ?>"><div class="cc_button" style="float:right;">Sign Up</div></a>
+                <a href="<?php echo site_url('login/registration');  ?>"><div class="cc_button" style="float:right;">Sign Up</div></a>
                 <?php } ?>
                 <div class="clear"></div>
             </div>
@@ -178,7 +179,7 @@
             	<h3>IOS and Android SDK </h3>
                 Using the iOS or Android FilmSync SDK producers can integrate the second-screen technology into a custom app or existing application. The well-documented SDK provides a custom integration while content can still be produced in the FilmSync Admin tool. Contact us for information about licensing the technology and using the SDK in your own app.
                 <div class="clear"></div>
-                <div class="cc_button" style="float:left;">Upgrade to Enterprise</div>
+                <a href="mailto:askmediaorg@gmail.com"><div class="cc_button" style="float:left;">Upgrade to Enterprise</div></a>
                 <div class="clear"></div>
             </div>
         </div>
@@ -215,11 +216,11 @@
                 </div>
     		</div>
             
-            <!-- <div class="pricing_plans_holder_li">
+            <div class="pricing_plans_holder_li">
             	<div class="heading">FilmSync Producer</div>
-                <div class="rate"><span class="small">$</span>9.99/m</div>
+                <div class="rate"><span class="small">$</span>20/m</div>
                 <div class="details">
-                	<div class="details_heading">$9.99/Month or $99/Year</div>
+                	<div class="details_heading">$20 Month</div>
                 	<div class="details_li">- 4 Project </div>
                     <div class="details_li">- 100 cards  </div>
                     <div class="details_li">&nbsp;</div>
@@ -228,7 +229,7 @@
                     
                     <div class="details_heading" style="margin-top:20px;"><a href="<?php echo site_url('login/registration'); ?>"><button type="button" class="btn btn-primary btn-lg btn-block">Signup</button></a></div>
                 </div>
-    		</div> -->
+    		</div> 
 
 
             </div>
@@ -239,11 +240,11 @@
             
             <div class="plans_2_holder">
             	
-                <!-- <div class="pricing_plans_holder_li">
+                <div class="pricing_plans_holder_li">
             	<div class="heading">FilmSync Unlimited</div>
                 <div class="rate"><span class="small">$</span>49.99/m</div>
                 <div class="details">
-                	<div class="details_heading">$49.99 Month or $499 year</div>
+                	<div class="details_heading">$49 Month</div>
                 	<div class="details_li">- Unlimited Projects </div>
                     <div class="details_li">- Unlimited cards</div>
                     <div class="details_li"> &nbsp;</div>
@@ -253,7 +254,7 @@
                     
                     <div class="details_heading" style="margin-top:20px;"><a href="<?php echo site_url('login/registration'); ?>"><button type="button" class="btn btn-primary btn-lg btn-block">Signup</button></a></div>
                 </div>
-    		</div> -->
+    		</div>
             
             <div class="pricing_plans_holder_li">
             	<div class="heading">Enterprise License</div>
